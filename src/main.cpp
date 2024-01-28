@@ -8,8 +8,9 @@ using namespace geode::prelude;
 class $modify(mCreatorLayer, CreatorLayer) {
 
 	bool init() {
-		if (!CreatorLayer::init())
+		if (!CreatorLayer::init()) {
 			return false;
+		}
 
 		auto containerMenu = this->getChildByID("creator-buttons-menu");
 
